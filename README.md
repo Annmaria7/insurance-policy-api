@@ -191,11 +191,15 @@ GET /policy/{policy_id}/endorsements
 
 ## 🔮 Future Enhancements
 
-* Database integration (PostgreSQL / DynamoDB)
-* Authentication & authorization
-* AWS deployment
-* API documentation with Swagger
-* Modular architecture (services, routes, models)
+* ## 🔮 Future Enhancements
+
+- Policy Renewal (new term creation)
+- Policy Cancellation (terminate active policy)
+- Database integration (PostgreSQL / DynamoDB)
+- Authentication & authorization
+- AWS deployment
+- API documentation with Swagger
+- Modular architecture (services, routes, models)
 
 ---
 
