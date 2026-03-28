@@ -105,10 +105,15 @@ The APIs will be tested using Postman.
 ## 🔗 Future Scope
 
 - Deploy application on AWS as part of final phase after completing core API functionalities
-- Implement full policy lifecycle (endorsement, renewal, cancellation)
+- Implement full policy lifecycle (renewal, cancellation)
 - Add authentication and security
 - Add database integration
 
+## Note
+
+While the system design includes full policy lifecycle operations such as renewal and cancellation, the current implementation focuses on core functionalities including policy creation, retrieval, and endorsement.
+
+Renewal and cancellation are planned for future phases.
 ---
 
 ## 🧠 Key Learnings
