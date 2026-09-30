@@ -3,10 +3,10 @@
 This project is being built in phases, moving from a local prototype toward a documented, reproducible cloud deployment.
 
 - [x] **Phase 1 — Clean & reorganize**
-  Fixed a broken `requirements.txt` (was frozen from the wrong Python environment), secured `.pem` handling in `.gitignore`, and reorganized a single flat `app.py` into a layered `models/ routes/ services/ utils/` structure. Added a Postman collection for repeatable testing. See [architecture.md](./architecture.md).
+  Fixed a broken `requirements.txt` (was frozen from the wrong Python environment), secured `.pem` handling in `.gitignore`, and reorganized a single flat `app.py` into a layered `models/ routes/ services/ utils/` structure. Added a Postman collection for repeatable testing. See [Architecture.md](./Architecture.md).
 
 - [ ] **Phase 2 — Real database**
-  Replace the in-memory dictionary in `services/policy_service.py` with PostgreSQL. Expected to be the *only* file that changes, by design — see the layering rationale in [architecture.md](./architecture.md).
+  Replace the in-memory dictionary in `services/policy_service.py` with PostgreSQL. Expected to be the *only* file that changes, by design — see the layering rationale in [Architecture.md](./Architecture.md).
 
 - [ ] **Phase 3 — Production-ready Flask**
   Gunicorn instead of Flask's development server, environment variable configuration, structured logging.
