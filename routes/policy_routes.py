@@ -44,9 +44,14 @@ def register_routes(app):
     @app.route("/policies", methods=["GET"])
     def get_all_policies_route():
         all_policies = get_all_policies()
-        return jsonify({
-            "policies": [vars(p) for p in all_policies]
-        }), 200
+
+        policies_data = []
+        for p in all_policies:
+            p_data = vars(p).copy()
+            p_data["endorsements"] = [vars(e) for e in p.endorsements]
+            policies_data.append(p_data)
+
+        return jsonify({"policies": policies_data}), 200
 
     @app.route("/policy/<policy_id>", methods=["GET"])
     def get_policy_route(policy_id):
