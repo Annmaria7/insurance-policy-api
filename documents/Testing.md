@@ -1,6 +1,6 @@
 # Testing
 
-APIs are tested manually using Postman. A ready-to-import collection covering all five endpoints is included in the repo root: [`Insurance Policy API.postman_collection.json`](../Insurance Policy API.postman_collection.json).
+APIs are tested manually using Postman. A ready-to-import collection covering all five endpoints is included in the repo root: [`Insurance Policy API.postman_collection.json`](../"Insurance Policy API.postman_collection.json").
 
 ## Using the collection
 
@@ -28,7 +28,7 @@ APIs are tested manually using Postman. A ready-to-import collection covering al
 - Fetching a policy/endorsement that doesn't exist → `404`
 
 ## Note on the in-memory store
-Because data lives only in memory, **restarting the server clears everything** — including after Flask's debug-mode auto-reload on file save. If a saved request suddenly returns "Policy not found," re-run **Create Policy** and update the `policy_id` variable. See [troubleshooting.md](./troubleshooting.md).
+Because data lives only in memory, **restarting the server clears everything** — including after Flask's debug-mode auto-reload on file save. If a saved request suddenly returns "Policy not found," re-run **Create Policy** and update the `policy_id` variable. See [Troubleshooting.md](./Troubleshooting.md).
 
 ## Planned
 Automated testing (beyond manual Postman runs) is not yet in place — this is expected to be introduced alongside CI/CD in a later roadmap phase.
