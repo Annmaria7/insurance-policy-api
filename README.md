@@ -27,7 +27,7 @@ Currently running locally with an in-memory store — see [`Roadmap.md`](documen
 
 ## 📚 Documentation
 
-- [`Getting started.md`](<documents/Getting started.md>) — setup and running locally
+- [`Getting started.md`](<documents/Getting Started.md>) — setup and running locally
 - [`Architecture.md`](documents/Architecture.md) — layered structure, API endpoints, design decisions
 - [`Testing.md`](documents/Testing.md) — Postman collection usage
 - [`Troubleshooting.md`](documents/Troubleshooting.md) — common issues
