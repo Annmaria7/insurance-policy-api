@@ -1,0 +1,184 @@
+{
+  "info": {
+    "_postman_id": "57d1452c-5327-4d65-9a11-fe2460f47954",
+    "name": "Insurance Policy API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53301714",
+    "_collection_link": "https://go.postman.co/collection/53301714-57d1452c-5327-4d65-9a11-fe2460f47954?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create Policy",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"insurer_first_name\": \"Ann\",\r\n    \"insurer_last_name\": \"Maria\",\r\n    \"lob\": \"Auto\",\r\n    \"effective_date\": \"2026-01-01\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/policy",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "policy"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Policy by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/policy/{{policy_id}}",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "policy",
+            "{{policy_id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all Policies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/policies",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "policies"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Endorse Policy",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"address\": \"456 Variable Street\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/policy/{{policy_id}}/endorse",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "policy",
+            "{{policy_id}}",
+            "endorse"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Endorsements",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/policy/{{policy_id}}/endorsements",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "policy",
+            "{{policy_id}}",
+            "endorsements"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "policy_id",
+      "value": ""
+    }
+  ]
+}
