@@ -33,9 +33,9 @@ http://127.0.0.1:5000
 
 ## Environment & Configuration
 - No environment variables are required to run this locally.
-- Data is stored **in memory** — restarting the app clears all policies. This is a known, intentional limitation of the current phase; see [roadmap.md](./roadmap.md) Phase 2.
-- Debug mode is enabled by default for local development. Flask's built-in server is not production-safe — a production WSGI server (Gunicorn) is planned; see [roadmap.md](./roadmap.md) Phase 3.
+- Data is stored **in memory** — restarting the app clears all policies. This is a known, intentional limitation of the current phase; see [Roadmap.md](./Roadmap.md) Phase 2.
+- Debug mode is enabled by default for local development. Flask's built-in server is not production-safe — a production WSGI server (Gunicorn) is planned; see [Roadmap.md](./Roadmap.md) Phase 3.
 
 ## Next steps
-- To test the API, see [testing.md](./testing.md)
-- To understand the code structure, see [architecture.md](./architecture.md)
+- To test the API, see [Testing.md](./Testing.md)
+- To understand the code structure, see [Architecture.md](./Architecture.md)
