@@ -1,6 +1,6 @@
 # Testing
 
-APIs are tested manually using Postman. A ready-to-import collection covering all five endpoints is included in the repo root: [`Insurance Policy Api.postman_collection.json`](../Insurance Policy API.postman_collection.json).
+APIs are tested manually using Postman. A ready-to-import collection covering all five endpoints is included in the repo root: [`Insurance Policy API.postman_collection.json`](../Insurance Policy API.postman_collection.json).
 
 ## Using the collection
 
