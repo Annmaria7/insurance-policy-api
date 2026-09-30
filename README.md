@@ -18,7 +18,7 @@ A backend REST API simulating real-world Property & Casualty (P&C) insurance pol
           PostgreSQL          Logs/Metrics
 ```
 
-Currently running locally with an in-memory store — see [`Roadmap.md`](../Roadmap.md) for the path to the architecture above.
+Currently running locally with an in-memory store — see [`Roadmap.md`](./documents/Roadmap.md) for the path to the architecture above.
 
 ## ⚙️ Tech Stack
 
@@ -27,11 +27,11 @@ Currently running locally with an in-memory store — see [`Roadmap.md`](../Road
 
 ## 📚 Documentation
 
-- [`Getting-started.md`](../Getting-started.md) — setup and running locally
-- [`Architecture.md`](../Architecture.md) — layered structure, API endpoints, design decisions
-- [`Testing.md`](../Testing.md) — Postman collection usage
-- [`Troubleshooting.md`](../Troubleshooting.md) — common issues
-- [`Roadmap.md`](../Roadmap.md) — phased plan from local prototype to AWS deployment
+- [`Getting-started.md`](./documents/Getting-started.md) — setup and running locally
+- [`Architecture.md`](./documents/Architecture.md) — layered structure, API endpoints, design decisions
+- [`Testing.md`](./documents/Testing.md) — Postman collection usage
+- [`Troubleshooting.md`](./documents/Troubleshooting.md) — common issues
+- [`Roadmap.md`](./documents/Roadmap.md) — phased plan from local prototype to AWS deployment
 
 ## 👩‍💻 Author
 
