@@ -23,9 +23,10 @@ def register_routes(app):
         insurer_first_name = data.get("insurer_first_name")
         insurer_last_name = data.get("insurer_last_name")
         lob = data.get("lob")
+        address = data.get("address")
         effective_date = data.get("effective_date")
 
-        if has_missing_fields([insurer_first_name, insurer_last_name, lob, effective_date]):
+        if has_missing_fields([insurer_first_name, insurer_last_name, lob, address, effective_date]):
             return jsonify({"error": "All fields are required"}), 400
 
         if not is_valid_lob(lob):
@@ -34,7 +35,7 @@ def register_routes(app):
         if not is_valid_date(effective_date):
             return jsonify({"error": "Invalid date format. Use YYYY-MM-DD"}), 400
 
-        new_policy = create_policy(insurer_first_name, insurer_last_name, lob, effective_date)
+        new_policy = create_policy(insurer_first_name, insurer_last_name, lob, address, effective_date)
 
         return jsonify({
             "message": "Policy created successfully",
